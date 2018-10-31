@@ -23,9 +23,11 @@ then
 	exit 2
 fi
 
-
 cp commands/mc-system-start.sh $cmdpath/mc-system-start.sh
+
 cp commands/mc-system-stop.sh $cmdpath/mc-system-stop.sh
+sed -i -e 's/::::TEMPLATE:MC_DIR::::/'"$installdir"'/g' "$cmdpath/mc-system-stop.sh"
+
 cp server-scripts/mc-system-refresher.sh $installdir/mc-system-refresher.sh
 cp server-scripts/start-server.sh $installdir/start-server.sh
 

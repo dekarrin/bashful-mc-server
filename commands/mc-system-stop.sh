@@ -2,7 +2,7 @@
 
 # Accepts warning time; defaults to 10 if none given
 
-MC_DIR=/home/dekarrin/minecraft
+MC_DIR="::::TEMPLATE:MC_DIR::::"
 SERVER_SESSION=$(cat "$MC_DIR/mc-system-server-session")
 RESTARTER_SESSION=$(cat "$MC_DIR/mc-system-restarter-session")
 
