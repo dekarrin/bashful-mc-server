@@ -2,7 +2,7 @@
 
 while :
 do
-	java -Xmx2560M -Xms2560M -jar minecraft-server.jar nogui
+	java -Xmx::::TEMPLATE:HEAP_MAX:::: -Xms::::TEMPLATE:HEAP_START:::: -jar minecraft-server.jar nogui
 	command="$(cat mc-supervisor-command)"
 	if [ "$command" = "exit" ]
 	then

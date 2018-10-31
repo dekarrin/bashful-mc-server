@@ -4,7 +4,7 @@
 
 SERVER_SESSION=mcserver
 RESTARTER_SESSION=mcrefresher
-MC_DIR=/home/dekarrin/minecraft
+MC_DIR="::::TEMPLATE:MC_DIR::::"
 
 if [ -f "$MC_DIR/.mc-system-lock" ]
 then
