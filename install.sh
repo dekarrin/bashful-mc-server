@@ -24,7 +24,7 @@ then
 fi
 
 read -p "Starting heap size (default: 2560M)? " heap_start
-[ -n "$heap_start" ] || heap_start=2560
+[ -n "$heap_start" ] || heap_start=2560M
 
 read -p "Maximum heap size (default: $heap_start)? " heap_max
 [ -n "$heap_max" ] || heap_max="$heap_start"
