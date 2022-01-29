@@ -22,6 +22,8 @@ screen -dmS $RESTARTER_SESSION
 screen -S $SERVER_SESSION -X stuff 'cd "'$MC_DIR'" && ./start-server.sh
 '
 
+screen -S $RESTARTER_SESSION -X logfile "$MC_DIR/logs/refresher.log"
+screen -S $RESTARTER_SESSION -X log on
 screen -S $RESTARTER_SESSION -X stuff 'cd "'$MC_DIR'" && ./mc-system-refresher.sh
 #'
 
